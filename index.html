@@ -492,7 +492,7 @@
   </head>
   <body>
     <header>
-      <h1>Tournoi Niveau B</h1>
+      <h1>Roland Forest B</h1>
       <p>5 Players · Double Group Stage</p>
     </header>
 
@@ -507,11 +507,11 @@
               <div class="match-label">Group A · Match 1 - Ven 17h30</div>
               <div class="player group-a">
                 <span class="player-seed">1</span
-                ><span class="player-name" id="n1">L'Artiste</span>
+                ><span class="player-name" id="n1">Jean</span>
               </div>
               <div class="player group-a">
                 <span class="player-seed">2</span
-                ><span class="player-name" id="n2">Dupond</span>
+                ><span class="player-name" id="n2">Juan</span>
               </div>
             </div>
 
@@ -551,11 +551,11 @@
               <div class="match-label">Group B · Match 1 - Ven 17h30</div>
               <div class="player group-b">
                 <span class="player-seed">6</span
-                ><span class="player-name" id="n6">Dupont</span>
+                ><span class="player-name" id="n6">Francisco</span>
               </div>
               <div class="player group-b">
                 <span class="player-seed">7</span
-                ><span class="player-name" id="n7">Yoda</span>
+                ><span class="player-name" id="n7">André</span>
               </div>
             </div>
           </div>
@@ -609,7 +609,7 @@
               </div>
               <div class="player bye">
                 <span class="player-seed">5</span
-                ><span class="player-name" id="n5-final">Avrell</span>
+                ><span class="player-name" id="n5-final">Marc</span>
               </div>
             </div>
           </div>
@@ -634,7 +634,7 @@
           <div class="path-card bye">
             <h3>5th Player</h3>
             <p>
-              <span id="n5-banner">Avrell</span> receives a bye in Round 1 and
+              <span id="n5-banner">Marc</span> receives a bye in Round 1 and
               enters the bracket in the
               <strong style="color: var(--bye)">Consolation Final</strong>
               against the winner of the losers' bracket.
@@ -680,18 +680,18 @@
         <h3>Player Names</h3>
 
         <div class="field">
-          <label>Group A — L'Artiste</label><input id="i1" value="L'Artiste" />
+          <label>Group A — Jean</label><input id="i1" value="Jean" />
         </div>
         <div class="field">
-          <label>Group A — Dupond</label><input id="i2" value="Dupond" />
+          <label>Group A — Juan</label><input id="i2" value="Juan" />
         </div>
         <div class="field">
           <label>Group A — TBD - Winner Group A</label
-          ><input id="i3" value="Dupont" />
+          ><input id="i3" value="Francisco" />
         </div>
         <div class="field">
           <label>Group A — TBD - Winner Group B</label
-          ><input id="i4" value="Yoda" />
+          ><input id="i4" value="André" />
         </div>
 
         <div
@@ -703,10 +703,10 @@
         ></div>
 
         <div class="field">
-          <label>Group B — Dupont</label><input id="i6" value="Dupont" />
+          <label>Group B — Francisco</label><input id="i6" value="Francisco" />
         </div>
         <div class="field">
-          <label>Group B — Yoda</label><input id="i7" value="Yoda" />
+          <label>Group B — André</label><input id="i7" value="André" />
         </div>
         <div class="field">
           <label>Group B — TBD - Looser Group A</label
@@ -726,7 +726,7 @@
         ></div>
 
         <div class="field">
-          <label>5th Player (bye)</label><input id="i5" value="Avrell" />
+          <label>5th Player (bye)</label><input id="i5" value="Marc" />
         </div>
 
         <div class="modal-actions">
@@ -758,8 +758,8 @@
           const el = document.getElementById("n" + i);
           if (el) el.textContent = val;
         });
-        // Update Avrell in banner and final
-        const p5 = document.getElementById("i5").value.trim() || "Avrell";
+        // Update Marc in banner and final
+        const p5 = document.getElementById("i5").value.trim() || "Marc";
         document.getElementById("n5-banner").textContent = p5;
         document.getElementById("n5-final").textContent = p5;
         closeModal();
